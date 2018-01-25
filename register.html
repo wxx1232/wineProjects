@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登录页面</title>
+<link rel="stylesheet" href="css/register.css"/>
+</head>
+<body>
+	<div class="top">
+		<img class="logo" src="img/letv.jpg"/>
+		<div class="top_right">
+			<ul class="uls">
+				<li class="lis">
+					<span vlass="txt">语言</span>
+					<a href="#" class="language">简体中文</a> |
+				</li>
+				<li class="lis">
+					<span vlass="txt">国家/地区:</span>
+					<a href="#" class="language">中国</a> |
+				</li>
+				<li class="lis">
+					<a href="#" class="language">帮助</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--第二部分-->
+	<div class="content">
+		<!--登录部分-->
+		<div class="log">
+			<p class="log_top">
+				<span class="top_title">登录</span>
+				<em></em><a href="#" class="dengLu">短信验证码登录</a>
+			</p>
+			<!--<form  method="post" action="regsave.php" id="f">-->
+				<span id="errorMsg" style="display: none"></span>
+				<input class="txt txt1" id="username" type="text" placeholder="邮箱/手机号"/>
+				<em class="emm"></em>
+				<input class="txt txt2" id="userpass" type="password" placeholder="密码"/><br />
+				<div class="txt3">
+					<input type="checkbox"  class="check" checked/> <span>记住登录状态</span>
+					<a href="#">重置密码</a>
+				</div>
+				<input type="button" id="btnlogin" class="denglu"/>
+				
+			<!--</form>-->
+			<p class="ptxt">从这里出发，开启乐视生态世界<a href="login.html">立即注册</a></p>
+			<p><a class="else"></a></p>
+			<div class="box">
+				<div class="imgs">
+					<a href="#"><img src="img/r1.jpg"/></a>
+					<a href="#"><img src="img/r2.jpg"/></a>
+					<a href="#"><img src="img/r3.jpg"/></a>
+					<a href="#"><img src="img/r1.jpg"/></a>
+					<a href="#"><img src="img/r1.jpg"/></a>
+				</div>	
+			</div>
+		</div>
+	</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/register.js"></script>

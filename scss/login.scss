@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+$pageWidth:100%;
+$topHeight:46px;
+$titleBgColor: #ffea81;
+$borderDirection:top;
+$aTopColor:#999999;
+
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,form,hr,h1,h2,h3,h4,h5,h6,img,input{
+    margin:0;
+    padding:0;
+}
+body{
+    font-size:16px;
+    font-family:"微软雅黑",Arial;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style:none;
+}
+ol li{
+    list-style:none;
+}
+input{
+    border:none;
+}
+//头部
+.top{
+    width:100%;
+    height:90px;
+    background: white;
+    
+        .logo{
+            width:176px;
+            height:90px;
+            float:left;
+        }
+    
+        .top_right{
+            float:right;   
+           .lis{
+               float:left;
+               margin:0 4px;
+               color:#aaaaaa;
+               line-height:90px;
+               font-size:14px;
+            a{
+               color:#aaaaaa;
+               text-decoration: underline;
+               }
+           }
+        }
+    }
+.content{
+    width:100%;
+    height:490px;
+    background: url(../img/loginBack.jpg) no-repeat;
+        //注册部分
+        .log{
+         width:430px;
+        height:460px;
+        background:#ffffff;
+        float:right;
+        margin:18px 14px 0 0;
+        
+            .log_top{
+                width:360px;
+                overflow: hidden;
+                padding:28px 30px 30px 42px;
+                .top_title{
+                   color:#333333;
+                   font-size:16px;
+                   float:left; 
+                }
+                a{
+                   float:right;
+                   color:#529bef;
+                }
+            }
+        }  
+        //表单部分
+        .message{
+            padding-left:28px ;
+            position: relative;
+            .txt{
+                width:378px;
+                height:42px;
+                border:1px solid #ccc;
+                text-indent: 58px;
+                font-size:12px;
+                background-size: 20px;
+                
+            }
+            .txt1{
+                background: url(../img/person.jpg) no-repeat 22px center;
+                 margin-bottom:18px; 
+              
+            }
+            .txt2{
+                background: url(../img/key.jpg) no-repeat 22px center;
+                 margin-bottom:18px; 
+            }
+            //验证码的测试
+            .txt3{
+                background: url(../img/yzm.jpg) no-repeat 22px center;
+                 margin-bottom:18px; 
+            }
+            .yzm{
+                width: 100px;
+                height: 34px;
+                background: white;
+                position: absolute;
+                left: 306px;
+                top: 150px;
+                
+                font-size: 24px;
+                color: #40568f;
+                text-align: center;
+                line-height: 34px;
+                }
+          
+            }
+            //填写验证码部分
+            .code{
+                width:382px;
+                height:42px;
+                line-height:42px;
+                .txt4{
+                    width:228px;
+                    height:42px;
+                    font-size:14px;
+                    background: url(../img/xinxi.jpg) no-repeat 22px center;
+                    float:left;
+                }
+                a{
+                   float:left;
+                    width:108px;
+                    height:42px;
+                    color:#419ce3;
+                    border:1px solid #419ce3;
+                    margin-left:14px;
+                    text-align: center;
+                    
+                }
+                
+            }
+            //复选框 
+            .checkBox{
+            margin-right:6px;
+            }
+            .checkTxt{
+               color:#666666;
+               font-size:12px; 
+                a{
+                   color:#3399cc;
+                   text-decoration: underline;
+                }
+            }
+
+        }   
+ //注册部分
+.denglu{
+        width:380px;
+        height:42px;
+        text-indent:-99999px;
+        background: url(../img/zhuce.jpg) no-repeat;
+        margin-top:12px;
+}   
+
+#errorMsg{
+    width:300px;
+    height:20px;
+    font-size:12px;
+}

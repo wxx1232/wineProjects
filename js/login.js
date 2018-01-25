@@ -63,7 +63,6 @@ $(function () {
 					$("#ceshi").html("该用户名注册成功");
                 }else{
                     $("#ceshi").html("注册失败，该用户名已存在");
-//                  $("#errorMsg").show();
                 }
             }
         });
