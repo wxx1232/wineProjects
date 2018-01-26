@@ -33,3 +33,29 @@ function show_time() {
     // 设置定时器
     setTimeout("show_time()", 1000);
 }
+
+
+ //动态获取商品信息
+ $(function () {
+        $.ajax({
+           type:"get",
+            url:"php/getDayBuy.php",
+            success:function (data) {
+                showgoodsList(data);
+            },
+            dataType:"json"
+        });
+    });
+
+    function showgoodsList(datas) {
+        let $ulbox = $("#product");
+        for(let i=0;i<datas.length;i++){
+            //1、创建li
+            let str="<li><img src='"+datas[i].goodsImg+"'/>"+
+            		"<p>"+datas[i].goodsName+"</p>"+
+            		"<a>"+datas[i].goodsDesc+"</a>"+
+                "<em>闪购价：￥"+datas[i].goodsPrice+"</em></li>";
+								
+            $ulbox.append(str);
+        }
+    }
